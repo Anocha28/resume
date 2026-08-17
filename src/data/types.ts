@@ -61,6 +61,8 @@ export interface Profile {
   name: string
   firstName: string
   lastName: string
+  /** Alternate (Burmese) name shown under the main name in the hero. */
+  altName?: string
   title: string
   tagline: string
   summary: string

@@ -4,6 +4,7 @@ export const profile: Profile = {
   name: 'Anocha Sirijindachot',
   firstName: 'Anocha',
   lastName: 'Sirijindachot',
+  altName: 'Win Htet Aung',
   title: 'Full-Stack Developer',
   tagline:
     'I build ERP and logistics systems end to end — from database schema to desktop, web, and mobile clients — and AI assistants that sit on top of them.',

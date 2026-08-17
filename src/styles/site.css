@@ -200,6 +200,22 @@
   }
 }
 
+.hero .alt-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  color: var(--fg-muted);
+  margin-top: -0.35rem;
+  margin-bottom: 1rem;
+
+  & span {
+    font-size: 0.75em;
+    font-weight: 500;
+    color: var(--fg-faint);
+    margin-right: 0.15rem;
+  }
+}
+
 .hero .tagline {
   font-size: clamp(1.05rem, 2vw, 1.25rem);
   color: var(--fg-muted);
@@ -249,6 +265,19 @@
   aspect-ratio: 1;
   border-radius: 50%;
   object-fit: cover;
+  border: 4px solid var(--bg-elevated);
+  outline: 2px solid var(--accent);
+  outline-offset: 4px;
+  box-shadow: var(--shadow-lg);
+}
+
+/* Portrait-orientation (2:3) photo variant */
+.portrait-tall {
+  width: clamp(13rem, 24vw, 17rem);
+  height: auto;
+  aspect-ratio: 427 / 640;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
   border: 4px solid var(--bg-elevated);
   outline: 2px solid var(--accent);
   outline-offset: 4px;

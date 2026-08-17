@@ -1,6 +1,6 @@
 import { Icon } from './Icon'
 import { profile } from '../data/profile'
-import portrait from '../assets/profile.jpg'
+import portrait from '../assets/profile.png'
 
 export function Hero() {
   return (
@@ -11,6 +11,11 @@ export function Hero() {
           <h1>
             {profile.firstName} <span>{profile.lastName}</span>
           </h1>
+          {profile.altName && (
+            <p className="alt-name">
+              <span>a.k.a.</span> {profile.altName}
+            </p>
+          )}
           <p className="tagline">{profile.tagline}</p>
           <div className="meta">
             <span className="item">
@@ -48,8 +53,12 @@ export function Hero() {
             </div>
           </div>
         </div>
+        {/* Square/circle version — switch back by restoring this block (and a square image import):
         <div className="portrait-wrap">
           <img className="portrait" src={portrait} alt={`Portrait of ${profile.name}`} width="240" height="240" />
+        </div> */}
+        <div className="portrait-wrap">
+          <img className="portrait-tall" src={portrait} alt={`Portrait of ${profile.name}`} width="427" height="640" />
         </div>
       </div>
     </div>
