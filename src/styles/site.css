@@ -737,8 +737,11 @@
     grid-template-columns: 1fr;
   }
 
+  /* Image sits after the CTA row (end of hero, above About) and centered */
   .hero .portrait-wrap {
-    order: -1;
+    display: flex;
+    justify-content: center;
+    margin-top: 1.5rem;
   }
 
   .secondary-grid,
