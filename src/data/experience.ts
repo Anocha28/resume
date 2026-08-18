@@ -59,7 +59,7 @@ export const experience: Experience[] = [
   {
     role: 'Freelance Software Developer',
     company: 'Freelance',
-    location: 'Myanmar',
+    location: 'Maesot, Thailand',
     start: 'Oct 2010',
     end: 'Nov 2011',
     summary: 'Early freelance software work.',

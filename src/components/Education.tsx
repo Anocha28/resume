@@ -1,5 +1,5 @@
 import { certifications, education } from '../data/education'
-import { Icon } from './Icon'
+// import { Icon } from './Icon'
 import { Section } from './Section'
 
 export function Education() {
@@ -12,7 +12,7 @@ export function Education() {
             <p className="org">{item.org}</p>
             <p className="period">{item.period}</p>
             {item.note && <p className="note">{item.note}</p>}
-            {item.certUrl && (
+            {/* {item.certUrl && (
               <a
                 className="cert-link"
                 href={import.meta.env.BASE_URL + item.certUrl}
@@ -22,7 +22,7 @@ export function Education() {
                 <Icon name="file" />
                 View certificate (PDF)
               </a>
-            )}
+            )} */}
           </div>
         ))}
         {certifications.map((cert) => (
@@ -30,7 +30,7 @@ export function Education() {
             <h3>{cert.title}</h3>
             <p className="org">{cert.org}</p>
             <p className="period">{cert.year}</p>
-            {cert.certUrl && (
+            {/* {cert.certUrl && (
               <a
                 className="cert-link"
                 href={import.meta.env.BASE_URL + cert.certUrl}
@@ -40,7 +40,7 @@ export function Education() {
                 <Icon name="file" />
                 View certificate (PDF)
               </a>
-            )}
+            )} */}
           </div>
         ))}
       </div>

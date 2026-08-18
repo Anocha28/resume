@@ -3,16 +3,23 @@ import type { Certification, EducationItem } from './types'
 export const education: EducationItem[] = [
   {
     title: 'Diploma in Software Engineering',
-    org: 'University of Yangon',
+    org: '',
     period: 'Jul 2013 – Mar 2014',
     note: 'Final project: HR management system for Technology Leaf Co., Ltd.',
     certUrl: 'certificates/diploma.pdf',
   },
-  {
-    title: 'English (major)',
-    org: 'Dagon University',
-    period: 'Jul 2008 – Feb 2009',
-  },
+  // {
+  //   title: 'Diploma in Software Engineering',
+  //   org: 'University of Yangon',
+  //   period: 'Jul 2013 – Mar 2014',
+  //   note: 'Final project: HR management system for Technology Leaf Co., Ltd.',
+  //   certUrl: 'certificates/diploma.pdf',
+  // },
+  // {
+  //   title: 'English (major)',
+  //   org: 'Dagon University',
+  //   period: 'Jul 2008 – Feb 2009',
+  // },
 ]
 
 export const certifications: Certification[] = [
